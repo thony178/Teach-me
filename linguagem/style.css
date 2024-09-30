@@ -1,4 +1,23 @@
-h1{
-    color:yellow;
-    font-size:center;
+:root{
+    --background-primary: #121113;
+    --foreground-primary:#121113;
+    --foreground-segundary:#21121d;
+    --boder-primary:#3c393f;
+    --boder-segundary:#692955;
+    --primary:#d6409f;
+    --segundary:#232225;
+    --text-color:whitesmoke;
+    --text-color-question:#b5b2bc;
+    --text-color-disabled:#6f6d78;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--background-primary);
+    color: var(--text-color);
 }
