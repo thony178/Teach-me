@@ -29,15 +29,18 @@
     "YELA" 0;
 }
 
+body {
+    background-color: var(--background-primary);
+    color: var(--text-color);
+}
+
 button {
     background-color: gold;
 }
 
-.background1 {
+.Background {
     background-color: purple;
-}
-
-body {
-    background-color: var(--background-primary);
-    color: var(--text-color);
+    width:100%;
+    height: 100vh;
+    display: flex;
 }
