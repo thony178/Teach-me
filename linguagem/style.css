@@ -16,7 +16,27 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+
+
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 100%;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0,
+    "XELA" 0,
+    "YELA" 0;
 }
+
+button {
+    background-color: gold;
+}
+
+.background1 {
+    background-color: purple;
+}
+
 body {
     background-color: var(--background-primary);
     color: var(--text-color);

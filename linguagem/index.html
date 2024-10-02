@@ -5,44 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teach-me</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        
-        <saidebar>
+    <div class="Background1">
+        <saidebar class="saidebar">
             <div>
-                <details open>
+                <details open class="Tópicos">
                  <Summary> Tópicos sugeridos </Summary>
-                 <button> HTML </button>
-                 <button> CSS </button>
-                 <button> JAVASCRIPT </button>
-                 <button> TYPESCRIPT </button>
+                 <button><strong>HTML</strong> </button>
+                 <button> <strong>CSS</strong> </button>
+                 <button> <strong>JavaScript</strong> </button>
+                 <button> <strong>TypeScript</strong> </button>
                 </details>
      
-                <details open>
+                <details open class="Historico">
                  <Summary> Historico </Summary>
                  <button> JAVA </button>
                  <button> Python </button>
                 </details>
-     
              </div>
         </saidebar>
-
         <div>
-            <span> Olá sou um teste desse site </span>
+            <span id="InicialMSG"> Olá sou um teste desse site </span>
             <h1>Sou o Teach.me</h1>
-            <p>
+            <p class="Subtilulo">
                 Estou aqui para te ajudar com algumas perguntas sobre programção!
+                <br>
                 O que você quer que eu pergunte para você Sobre programação?
             </p>
         </div>
-        <div>
+        <div class="Chat">
             <textarea placeholder="Insira um tema que deseja estudar..."></textarea>
             <button>Enviar pergunta!</button>
+            <a href=""></a>
         </div>
 
         <div>
-            <p>
+            <p class="Rodapé">
                 Teach.me
             </p>
         </div>
