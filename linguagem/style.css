@@ -1,16 +1,18 @@
 
 :root {
-    --background-1: #121113;
-    --cor-de-fundo-1:#121113;
-    --cor-de-fundo-2:#21121d;
-    --borda-1:#3c393f;
-    --borda-2:#692955;
-    --primary:#86882c;
-    --segundary:#232225;
-    --text-color:whitesmoke;
-    --text-color-question:#000000;
-    --text-color-disabled:#525252;
-    --buttoncolor: rgba(214, 214, 27, 0.911);
+    --background-1: #000000;
+    --cor-de-fundo-1:#646464;
+    --cor-de-fundo-2:#b4b4b4;
+    --borda-1:#8000ff;
+    --borda-2:#ff00ae;
+    --primary:#717253;
+    --segundary:#ff0000;
+    --text-color-white:white;
+    --text-color-black:black;
+    --text-color-question:  #a4c7a2;
+    --text-color-disabled:#ffa0a0;
+    --buttoncolor1: rgba(214, 214, 27, 0.911);
+    --Buttoncolor2:rgb(143, 122, 7);
 }
 
 *{
@@ -36,10 +38,6 @@ body {
     color: var(--text-color);
 }
 
-button {
-    background-color: var(--buttoncolor);
-}
-
 .Background {
     width:100%;
     height: 100vh;
@@ -50,8 +48,62 @@ button {
     background-color: var(--cor-de-fundo-1);
     width:400px;
     height: 100%;
-    border: 1px solid var(--boder-primary);
+    border: 1px solid var(--boder-2);
     padding: 30px 0px;
+}
+
+details {
+    width: 100%;
+    max-height: 600px;
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+details.Tópicos {
+    border-bottom: 1px solid var(--borda-1);
+}
+
+details.Historico {
+    
+}
+
+.Historico summary {
+    background-color: var(--primary);
+}
+
+details summary::after {
+    content: "⮛";
+    transition: rotate 200ms ease-in;
+}
+
+details[open] summary::after{
+    content: "⮛";
+    transition: rotate 200ms ease-in;
+    rotate: 180deg;
+}
+
+details button {
+    width: 85%;
+    display: block;
+    margin: 0  auto;
+    margin-top: 8px;
+    padding: 5px;
+    background-color: var(--buttoncolor1);
+    border: 1px solid var(--Buttoncolor2);
+    border-radius: 6px;
+    color:var(--text-color-black);
+}
+
+details summary {
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.Tópicos summary {
+    background-color: var(--primary);
 }
 
 .text1 {
