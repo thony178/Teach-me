@@ -1,8 +1,8 @@
 
 :root {
     --background-1: #000000;
-    --cor-de-fundo-1:#646464;
-    --cor-de-fundo-2:#b4b4b4;
+    --cor-de-fundo-1:#8f8f8f;
+    --cor-de-fundo-2:#646464;
     --borda-1:#8000ff;
     --borda-2:#ff00ae;
     --primary:#717253;
@@ -106,10 +106,23 @@ details summary {
     background-color: var(--primary);
 }
 
-.text1 {
+.texto {
     background-color: var(--cor-de-fundo-2);
     width: 100%;
     height: 100%;
     display: flex;
     padding: 0 150px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    height: 100%;
+}
+
+.Inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
 }
