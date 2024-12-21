@@ -5,7 +5,7 @@
     --cor-de-fundo-2:#646464;
     --borda-1:#68631a;
     --borda-2:#ff00ae;
-    --primary:#717253;
+    --primary:#8b8d44;
     --segundary:#ff0000;
     --text-color-white:white;
     --text-color-black:black;
@@ -127,11 +127,53 @@ details summary {
     height: 100%;
 }
 
+.Inicial span {
+    font-weight: 500;
+}
+
+.Inicial h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.Inicial p {
+    font-weight: 300;
+}
+
+.Inicial h1 span {
+    color: var(--primary);
+}
+
 .Chat {
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.Chat textarea {
+    min-height: 40px;
+    height: auto;
+    resize: vertical;
+    padding: 8px;
+    color: transparent;
+    border: 1px solid var(--background-primary);
+    border-radius: 4px;
+    outline: none;
+    color: var(--text-color-black)
+}
+
+.Chat button {
+    width: 180px;
+    margin-left: auto;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: var(--borda-1);
+    color: var(--text-color-black);
+}
+
+.Rodape p span{
+    color: var(--primary);
 }
 
 .Rodape {
