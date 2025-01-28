@@ -131,6 +131,10 @@ details summary {
     font-weight: 500;
 }
 
+.Inicial span span {
+    color: rgb(226, 13, 208);
+}
+
 .Inicial h1 {
     font-size: 3rem;
     font-weight: 600;
