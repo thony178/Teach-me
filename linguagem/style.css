@@ -4,13 +4,13 @@
     --cor-de-fundo-1:#8f8f8f;
     --cor-de-fundo-2:#646464;
     --borda-1:#68631a;
-    --borda-2:#ff00ae;
+    --destaque-2:#ff00ae;
     --primary:#8b8d44;
-    --segundary:#ff0000;
+    --segundary:#636363;
     --text-color-white:white;
-    --text-color-black:black;
+    --text-color-black:rgb(0, 0, 0);
     --text-color-question:  #a4c7a2;
-    --text-color-disabled:#ffa0a0;
+    --text-color-disabled:#3a3a3a;
     --buttoncolor1: rgba(214, 214, 27, 0.911);
     --Buttoncolor2:rgb(143, 122, 7);
 }
@@ -177,7 +177,7 @@ details summary {
 }
 
 .Rodape p span{
-    color: var(--primary);
+    color: var(--destaque-2);
 }
 
 .Rodape {
@@ -188,4 +188,98 @@ details summary {
 .Rodape p {
     text-align: center;
     font-weight: 500;
+}
+
+.box-chat {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.box-chat > h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.box-chat > h1 span {
+    color: var(--destaque-2);
+}
+
+.question {
+    width: 100%;
+    color: var(--text-color-white);
+    background-color: var(--background-1);
+    padding: 20px 15px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+}
+
+.question h2 {
+    display: flex;
+    gap: 8px;
+    font-size: 1.5rem;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--text-color-question);
+}
+
+.Resposta {
+    width: 100%;
+    color: var(--text-color-white);
+    background-color: var(--background-1);
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+}
+
+.Resposta h2 {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: var(--text-color-black);
+    background-color: var(--cor-de-fundo-1);
+    border-bottom: 1px solid var(--borda-1);
+    font-weight: 400;
+}
+
+.Resposta p {
+    padding: 20px 15px;
+}
+
+.Feedback {
+    width: 100%;
+    padding: 20px 15px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+}
+
+.Feedback h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Feedback h2 span {
+    color: var(--destaque-2);
+}
+
+.Feedback p {
+    margin-bottom: 20px;
+}
+
+.Feedback .actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--destaque-2);
+}
+
+.Feedback .actions button {
+    width: 170px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: var(--buttoncolor1);
+    color: var(--text-color-black);
 }
